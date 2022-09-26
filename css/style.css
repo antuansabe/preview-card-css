@@ -92,34 +92,36 @@
 
     .main-container{
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 5;
+    grid-template-columns: 1fr 300px 300px 50px 50px 1fr;
+    grid-template-rows: 1fr 60px 1fr 100px 100px 60px 60px;
     }
 
     .image-container {
         grid-row-start: 2;
-        grid-column-start: 1;
+        grid-row-end: 7;
+        grid-column-start: 2;
         border-radius: 20px;
-        margin-top: 25px;
+        
     }
     
     .image-container img {
         width: 100%;
         height: 100%;
         border-radius: 20px;
+       
     }
     .parrafo {
         font-family: 'Montserrat', sans-serif;
         color: hsl(228, 12%, 48%);
         margin-left: 20px;
-        grid-row-start: 3;
-        grid-column-start: 2;
+        grid-row-start: 4;
+        grid-column-start: 3;
     }
     .perfume {
         margin-left: 20px;
         width: 320px;
-        grid-row-start: 1;
-        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-start: 3;
         font-size: 25px;
         font-family: 'Montserrat', sans-serif;
         color: hsl(228, 12%, 48%);
@@ -133,14 +135,12 @@
         margin-left: 20px;
     }
     .title  {
-        grid-row-start:2;
-        grid-column-start:2;
+        grid-row-start:3;
+        grid-column-start:3;
     }
-    .precio-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:flex-end;
+    .precio {
+        grid-row-start:5;
+        grid-column-start:3;
 
     }
     .precio-verde {
@@ -151,23 +151,25 @@
     color:hsl(158, 36%, 37%) ;
     }
     .precio-normal {
-        margin-top: 50px;
-        margin-left: 20px;
+        display: none;
         text-decoration:line-through;
         color: hsl(228, 12%, 48%);
     }
     .button {
+    grid-row-start:6;
+    grid-row-end: 7;
+    grid-column-start:3;
+    grid-column-end: 4;
     font-family: 'Montserrat', sans-serif;
     justify-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
     background-color: hsl(158, 36%, 37%);
     border-style: none;
     border-radius: 12px;
     color: white;
-    height: 40px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     font-size: medium;
+    margin-left: 20px;
     }
 
     .button svg {
